@@ -1,59 +1,88 @@
-# Cross-platform development artifacts
-*.o
-*.obj
-*.a
-*.lib
-*.dll
-*.so
-*.dylib
-*.exe
-*.out
-
-# Build directories
-build/
-dist/
-target/
-_output/
-
+```markdown
 # Dependencies
 node_modules/
-venv/
+__pycache__/
+*.egg-info/
 .venv/
+venv/
 .env
 .env.local
 .env.*
 
-# Python specific
-__pycache__/
+# Build artifacts
+build/
+dist/
 *.pyc
 *.pyo
 *.pyd
-.Python
-*.egg-info/
-.eggs/
-
-# Java specific
-*.class
-*.jar
-*.war
-.gradle/
-build/
-
-# C/C++ specific
-*.a
-*.lib
-*.obj
-*.o
 *.so
 *.dylib
 *.dll
 *.exe
+*.o
+*.obj
+*.a
+*.lib
+*.out
 
-# Compression archives
+# Testing
+.coverage
+htmlcov/
+.coverage.*
+.nyc_output/
+coverage/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.tmp
+
+# Python specific
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.git/
+.mypy_cache/
+.pytest_cache/
+.hypothesis/
+
+# Compressed files
 *.zip
+*.tar.gz
+*.tar.bz2
+*.tar.xz
 *.gz
-*.tar
-*.tgz
 *.bz2
 *.xz
 *.7z
@@ -68,28 +97,4 @@ build/
 *.Z
 *.lz
 *.lzo
-*.tar.gz
-*.tar.bz2
-*.tar.xz
-*.tar.zst
-
-# Logs
-*.log
-
-# Coverage reports
-coverage/
-htmlcov/
-.coverage
-
-# IDE files
-.vscode/
-.idea/
-*.swp
-*.swo
-*.tmp
-
-# System files
-.DS_Store
-Thumbs.db
-.mypy_cache/
-.pytest_cache/
+```
